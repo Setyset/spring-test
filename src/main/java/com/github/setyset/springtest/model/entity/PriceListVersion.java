@@ -1,5 +1,6 @@
 package com.github.setyset.springtest.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -14,8 +15,10 @@ public class PriceListVersion {
 
     private Integer version;
 
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "UTC")
     private LocalDate activeFrom;
 
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "UTC")
     private LocalDate activeTo;
 
     @ManyToOne(fetch = FetchType.LAZY)
