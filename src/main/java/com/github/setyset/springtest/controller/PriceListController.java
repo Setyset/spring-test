@@ -2,11 +2,8 @@ package com.github.setyset.springtest.controller;
 
 import com.github.setyset.springtest.model.dto.PriceListDTO;
 import com.github.setyset.springtest.model.dto.SavePriceListRequestDTO;
-import com.github.setyset.springtest.repository.PriceListRepository;
 import com.github.setyset.springtest.service.PriceListService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
